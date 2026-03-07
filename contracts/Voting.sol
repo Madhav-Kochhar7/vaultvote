@@ -137,7 +137,18 @@ contract Voting is Ownable {
 
         emit Voted(msg.sender, _candidateId);
     }
+<<<<<<< HEAD
 
+=======
+function removeCandidate(uint256 _id) external onlyOwner {
+    require(!electionOpen, "Voting: cannot remove while election is open");
+    require(_id > 0 && _id <= candidateCount, "Voting: invalid candidate ID");
+    require(bytes(candidates[_id].name).length > 0, "Voting: candidate already removed");
+    
+    delete candidates[_id];
+    emit CandidateAdded(_id, ""); // signals removal
+}
+>>>>>>> a2bc7a24f18339832d3e562ddeca823ef20d8f41
     // ─────────────────────────────────────────────────────────────────────────
     // Read Functions (called for free, no gas)
     // ─────────────────────────────────────────────────────────────────────────

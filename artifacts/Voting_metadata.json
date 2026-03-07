@@ -253,6 +253,22 @@
 				"type": "function"
 			},
 			{
+<<<<<<< HEAD
+=======
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "removeCandidate",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+>>>>>>> a2bc7a24f18339832d3e562ddeca823ef20d8f41
 				"inputs": [],
 				"name": "renounceOwnership",
 				"outputs": [],
@@ -434,11 +450,19 @@
 			]
 		},
 		"contracts/Voting.sol": {
+<<<<<<< HEAD
 			"keccak256": "0xc5dc195c3908b1988ecfc2c85b81118aeba7d476fe5c717aebd414295ee6b048",
 			"license": "MIT",
 			"urls": [
 				"bzz-raw://9d87ce024bd7ed65236b3b5db0f4b70a109e18cceccf6a4aec339856d015c152",
 				"dweb:/ipfs/QmbJMRQw2Fu4Nnz4EGnAv9WN79tCzDvXQbTwQfNrmuQqF5"
+=======
+			"keccak256": "0x04f3533840b84bbd3f709498069c57223b7aed401b3e96d6db7c2472c4032af3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://da7dc6c0859ef8c4412f5ff9073d1ca551393b592304be2b2b24b7df0e2a0212",
+				"dweb:/ipfs/QmarEsUPuB2bsVzbQabHaaUC1WfAdS2F4YnEcPxQTmoEZL"
+>>>>>>> a2bc7a24f18339832d3e562ddeca823ef20d8f41
 			]
 		}
 	},
