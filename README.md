@@ -13,6 +13,35 @@ Immutability: Once a vote is cast, it cannot be edited or deleted.
 
 Public Verifiability: Anyone can audit the results in real-time directly on the ledger.
 
+**File Structure**
+VaultVote/
+├── contracts/
+│   └── Voting.sol
+├── src/
+│   ├── abi/
+│   │   └── Voting.abi.json
+│   ├── components/
+│   │   ├── Navbar.tsx
+│   │   ├── CandidateCard.tsx
+│   │   └── Toast.tsx
+│   ├── constants/
+│   │   └── contract.ts
+│   ├── hooks/
+│   │   └── useVoting.ts
+│   ├── App.tsx
+│   ├── main.tsx
+│   ├── wagmi.config.ts
+│   └── index.css
+├── .env
+├── .env.example
+├── .gitignore
+├── index.html
+├── package.json
+├── tailwind.config.js
+├── tsconfig.json
+├── vite.config.ts
+└── postcss.config.js
+
 **Tech Stack**
 
 **Smart Contract Layer**
