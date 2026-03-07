@@ -1,3 +1,11 @@
 node_modules/
 dist/
 .env
+.env.example
+.deps/
+artifacts/
+.vite/
+setup.mjs
+scripts/
+Thumbs.db
+.DS_Storecleaq
