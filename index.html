@@ -14,5 +14,26 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+<script type="module">
+    import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+    createChat({
+        webhookUrl: 'https://arrsshh.app.n8n.cloud/webhook/6d5f43e6-6d12-4051-826f-7ef7d111a9ad/chat',
+        mode: 'window', 
+        showWelcomeMessage: true,
+        title: 'VoteVault Assistant',
+        subtitle: 'Powered by AI & Blockchain',
+        initialMessages: [
+            'नमस्ते! 👋 Welcome to VoteVault Assistant.',
+            'I can help you with MetaMask setup, candidate manifests, or how to vote on-chain. What would you like to know?'
+        ],
+        placeholder: 'Type your question here...',
+        backgroundColor: '#1a1a1a', // Matches a dark terminal/blockchain theme
+        onInit: () => {
+            console.log('VoteVault Assistant Initialized');
+        }
+    });
+</script>
   </body>
 </html>
