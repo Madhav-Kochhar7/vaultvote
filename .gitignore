@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.env
+.env.example
+env.example
+.deps/
+artifacts/
+build-info/
+cache/
+.vite/
+setup.mjs
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
