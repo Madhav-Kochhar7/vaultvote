@@ -1,4 +1,4 @@
-// src/main.tsx
+// src/main.jsx
 // ─────────────────────────────────────────────────────────────────────────────
 // App entry point. Wraps the tree in:
 //   WagmiProvider  → blockchain context (reads/writes)
@@ -18,7 +18,7 @@ import "./index.css";
 // React Query client — wagmi uses this internally for caching RPC calls
 const queryClient = new QueryClient();
 
-ReactDOM.createRoot(document.getElementById("root")!).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <WagmiProvider config={wagmiConfig}>
       <QueryClientProvider client={queryClient}>

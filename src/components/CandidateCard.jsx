@@ -1,19 +1,9 @@
-// src/components/CandidateCard.tsx
+// src/components/CandidateCard.jsx
 // ─────────────────────────────────────────────────────────────────────────────
 // Displays a single candidate with their name, vote count, and a Vote button.
 // ─────────────────────────────────────────────────────────────────────────────
 
 import React from "react";
-import { Candidate } from "../hooks/useVoting";
-
-interface Props {
-  candidate: Candidate;
-  totalVotes: bigint;
-  canVote: boolean;       // false if: not connected, already voted, election closed
-  isPending: boolean;     // a vote tx is in flight right now
-  votingForId: bigint | null; // which candidate is currently being voted for
-  onVote: (id: bigint) => void;
-}
 
 // A colour palette — cycles through candidates deterministically
 const ACCENT_COLORS = [
@@ -24,7 +14,7 @@ const ACCENT_COLORS = [
   { ring: "ring-rose-400",   bar: "bg-rose-400",   text: "text-rose-400",   btn: "bg-rose-500 hover:bg-rose-400"   },
 ];
 
-const CandidateCard: React.FC<Props> = ({
+const CandidateCard = ({
   candidate,
   totalVotes,
   canVote,

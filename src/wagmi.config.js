@@ -1,4 +1,4 @@
-// src/wagmi.config.ts
+// src/wagmi.config.js
 // ─────────────────────────────────────────────────────────────────────────────
 // Wagmi v2 + ConnectKit configuration
 // This is the single source of truth for all blockchain settings.

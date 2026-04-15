@@ -1,4 +1,4 @@
-// src/components/Navbar.tsx
+// src/components/Navbar.jsx
 // ─────────────────────────────────────────────────────────────────────────────
 // Top navigation bar with branding and ConnectKit wallet button.
 // ─────────────────────────────────────────────────────────────────────────────
@@ -6,11 +6,7 @@
 import React from "react";
 import { ConnectKitButton } from "connectkit";
 
-interface NavbarProps {
-  electionOpen?: boolean;
-}
-
-const Navbar: React.FC<NavbarProps> = ({ electionOpen }) => {
+const Navbar = ({ electionOpen }) => {
   return (
     <nav className="sticky top-0 z-40 border-b border-white/10 bg-gray-950/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">

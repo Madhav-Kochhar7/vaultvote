@@ -1,4 +1,4 @@
-// src/hooks/useVoting.ts
+// src/hooks/useVoting.js
 // ─────────────────────────────────────────────────────────────────────────────
 // Central hook that encapsulates ALL contract reads and writes.
 // Components stay clean — they just call this hook.
@@ -7,13 +7,6 @@
 import { useReadContract, useWriteContract, useWaitForTransactionReceipt, useAccount } from "wagmi";
 import { VOTING_CONTRACT_ADDRESS } from "../constants/contract";
 import VotingABI from "../abi/Voting.abi.json";
-
-// ── Candidate type that mirrors the Solidity struct ──────────────────────────
-export interface Candidate {
-  id: bigint;
-  name: string;
-  voteCount: bigint;
-}
 
 // ─────────────────────────────────────────────────────────────────────────────
 export function useVoting() {
@@ -84,14 +77,14 @@ export function useVoting() {
   });
 
   // ── Helper: normalise the raw tuple data into Candidate[] ─────────────────
-  const candidates: Candidate[] = (() => {
+  const candidates = (() => {
     if (!candidatesRaw) return [];
-    const [ids, names, voteCounts] = candidatesRaw as [bigint[], string[], bigint[]];
+    const [ids, names, voteCounts] = candidatesRaw;
     return ids.map((id, i) => ({ id, name: names[i], voteCount: voteCounts[i] }));
   })();
 
   // ── Action: cast vote for a candidate ────────────────────────────────────
-  const castVote = (candidateId: bigint) => {
+  const castVote = (candidateId) => {
     writeContract({
       address: VOTING_CONTRACT_ADDRESS,
       abi: VotingABI,
@@ -109,9 +102,9 @@ export function useVoting() {
   return {
     // Data
     candidates,
-    totalVotes: totalVotes as bigint | undefined,
-    electionOpen: electionOpen as boolean | undefined,
-    alreadyVoted: alreadyVoted as boolean | undefined,
+    totalVotes,
+    electionOpen,
+    alreadyVoted,
     // State flags
     candidatesLoading,
     isTxPending,

@@ -1,18 +1,11 @@
-// src/components/Toast.tsx
+// src/components/Toast.jsx
 // ─────────────────────────────────────────────────────────────────────────────
 // Simple animated toast for success / error notifications.
 // ─────────────────────────────────────────────────────────────────────────────
 
 import React, { useEffect } from "react";
 
-interface ToastProps {
-  type: "success" | "error" | "info";
-  message: string;
-  txHash?: string;
-  onClose: () => void;
-}
-
-const Toast: React.FC<ToastProps> = ({ type, message, txHash, onClose }) => {
+const Toast = ({ type, message, txHash, onClose }) => {
   // Auto-dismiss after 6 seconds
   useEffect(() => {
     const timer = setTimeout(onClose, 6000);
