@@ -1,4 +1,4 @@
-# 🗳️ VaultVote — Transparent On-Chain Voting
+#  VaultVote — Transparent On-Chain Voting
 
 > A decentralized, tamper-proof voting system built on the Ethereum Sepolia Testnet. Every vote is a permanent, publicly verifiable transaction on the blockchain.
 
@@ -28,12 +28,11 @@ VaultVote is a fully on-chain voting dApp where every vote is recorded as an imm
 
 ##  Features
 
--  **Wallet Connect** — Connect via MetaMask using ConnectKit
--  **On-Chain Voting** — Every vote is a permanent blockchain transaction
--  **One Person One Vote** — Enforced by smart contract, not by humans
--  **Live Results** — Vote tallies auto-refresh every 10 seconds
--  **Fully Verifiable** — Every vote is publicly visible on Sepolia Etherscan
--  **Responsive Design** — Works on desktop and mobile
+-  **Wallet Connect** 
+-  **On-Chain Voting** 
+-  **One Person One Vote**
+-  **Live Results** 
+-  **Fully Verifiable**
 
 ---
 
@@ -176,14 +175,3 @@ You need a tiny amount of Sepolia ETH to pay gas fees (transaction processing fe
 -  No admin can alter the results
 
 ---
-
-
-## 📜 License
-
-This project is licensed under the MIT License.
-
----
-
-> 🔗 **Contract:** on Sepolia Testnet  
-> 🌐 **Live:** [vaultvote.netlify.app](https://vaultvote.netlify.app)  
-> 📦 **Repo:** [github.com/Madhav-Kochhar7/VaultVote](https://github.com/Madhav-Kochhar7/VaultVote)
